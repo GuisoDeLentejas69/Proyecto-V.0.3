@@ -1,15 +1,57 @@
-/* Estilo para el encabezado */
-.site-header {
-    background-color: #a08669;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.nav-link {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f3eb;
+}
+
+.main-content {
+    flex: 1;
+}
+
+.site-header {
+    background-color: #d1bfab;
+    color: #000000;
+    padding: 10px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-image {
+    width: 350px;
+    height: auto;
+}
+
+.site-nav {
+    margin-left: auto;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    margin-left: 25px;
 }
 
 /* Estilo para el contenido principal */
@@ -24,6 +66,7 @@
     min-height: 80vh; /* Asegura que el contenido principal tenga suficiente altura */
 }
 
+
 /* Estilo para las pestañas */
 .tabs {
     display: flex;
@@ -33,7 +76,7 @@
     overflow: hidden;
     background: #f1f1f1;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: background 0.3s, box-shadow 0.3s;
+    transition: 0.3s, box-shadow 0.3s;
 }
 
 .tabs div {
@@ -44,7 +87,7 @@
     border: 1px solid #ccc;
     border-radius: 10px;
     margin-right: 5px;
-    transition: background 0.6s, color 0.6s, transform 0.3s;
+    transition: 0.6s, color 0.6s, transform 0.3s;
 }
 
 .tabs div.active {
@@ -124,7 +167,7 @@ button {
     color: #fff;
     font-size: 1.1rem;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: 0.3s;
 }
 
 button:hover {
